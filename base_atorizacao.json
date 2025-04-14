@@ -1,0 +1,19 @@
+[
+  {
+    "nome": "sarah",
+    "permissoes": {
+      "arquivo": "teste.c",
+      "leitura": true,
+      "escrita": true,
+      "execucao": true
+    }
+  },
+  {
+    "username": "mariana",
+    "permissao": {
+      "leitura": false,
+      "escrita": false,
+      "execucao": false
+    }
+  }
+]
