@@ -1,3 +1,5 @@
+# ENZO RICARDO E SARAH MANEIRA
+
 import json
 import pprint
 import getpass
@@ -25,7 +27,7 @@ def cadastrar():
             with open("usuarios.json", "w") as file:
                 json.dump(usuario, file)
 
-            with open("base_atorizacao.json", "r") as base:
+            with open("base_autorizacao.json", "r") as base:
                 base = json.load(base)
 
             usuario = base + [{
@@ -40,7 +42,7 @@ def cadastrar():
                 }
             }]
 
-            with open("base_atorizacao.json", "w") as base:
+            with open("base_autorizacao.json", "w") as base:
                 base.write(json.dumps(usuario))
 
             print("Usuário cadastrado com sucesso!")
@@ -77,7 +79,7 @@ def menu_autenticado(username):
 
         opcao = input("\n- Escolha uma opção: ")
 
-        with open("base_atorizacao.json", "r") as base:
+        with open("base_autorizacao.json", "r") as base:
             base = json.load(base)
             while True:
                 if opcao == "1":
@@ -124,22 +126,6 @@ def menu_autenticado(username):
                     return
                 else:
                     print("Opção inválida!")
-
-
-def listar_arquivos():
-    arquivo = input("Digite o nome do arquivo: ")
-
-    with open("base_atorizacao.json", "r") as base:
-        base = json.load(base)
-
-    for arquivo in base:
-        if arquivo == arquivo:
-            print("\n- Arquivo encontrado!\n")
-            pprint.pprint(arquivo)
-            break
-        else:
-            print(f"Arquivo {arquivo} não encontrado!")
-            break
 
 
 print("=-"*20)
