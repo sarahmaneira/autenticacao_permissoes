@@ -1,19 +1,35 @@
 [
   {
-    "nome": "sarah",
-    "permissoes": {
+    "username": "sarah",
+    "permissao": {
       "arquivo": "teste.c",
       "leitura": true,
       "escrita": true,
-      "execucao": true
+      "execucao": true,
+      "exclusao": true,
+      "criar": true
     }
   },
   {
-    "username": "mariana",
+    "username": "maneira",
     "permissao": {
+      "arquivo": "nenhum",
       "leitura": false,
       "escrita": false,
-      "execucao": false
+      "execucao": false,
+      "exclusao": false,
+      "criar": false
+    }
+  },
+  {
+    "username": "giovani",
+    "permissao": {
+      "arquivo": "nenhum",
+      "leitura": false,
+      "escrita": false,
+      "execucao": false,
+      "exclusao": false,
+      "criar": false
     }
   }
 ]
