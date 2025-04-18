@@ -9,27 +9,5 @@
       "exclusao": true,
       "criar": true
     }
-  },
-  {
-    "username": "maneira",
-    "permissao": {
-      "arquivo": "nenhum",
-      "leitura": false,
-      "escrita": false,
-      "execucao": false,
-      "exclusao": false,
-      "criar": false
-    }
-  },
-  {
-    "username": "giovani",
-    "permissao": {
-      "arquivo": "nenhum",
-      "leitura": false,
-      "escrita": false,
-      "execucao": false,
-      "exclusao": false,
-      "criar": false
-    }
   }
 ]
