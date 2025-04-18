@@ -1,7 +1,6 @@
 # ENZO RICARDO E SARAH MANEIRA
 
 import json
-import pprint
 import getpass
 
 
@@ -10,7 +9,7 @@ def cadastrar():
 
     print("Digite os dados do novo usuário: ")
     username = input("Nome de usuário: ")
-    password = input("Senha: ")
+    password = getpass.getpass("Senha: ")
 
     with open("usuarios.json", "r") as file:
         usuarios = json.load(file)
@@ -53,7 +52,7 @@ def autenticar():
     print("\n- Autenticação de usuário")
 
     username = input("\nNome de usuário: ")
-    password = input("Senha:")
+    password = getpass.getpass("Senha: ")
 
     with open("usuarios.json", "r") as file:
         usuarios = json.load(file)
